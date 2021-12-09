@@ -39,11 +39,17 @@ body {
       )
       #e4e3e3;
   clip-path: url(#svg-mask);
+  
+}
+.wrap {
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 70, 0.5));
+   
 }
 .mask {
   position: absolute;
   width: 0px;
   height: 0px;
+  
 }
 .first-border {
   position: relative;
