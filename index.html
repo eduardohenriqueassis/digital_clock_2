@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock-body">
+      <div class="first-border">
+        <div class="visor">
+          <div class="week"><h1>FR</h1></div>
+          <div class="date"><p> 4-28 </p></div>
+          <div class="hour">8:14</div>
+          <div class="seconds">30</div>
+          <div class="bar"></div>
+        </div>
+        <div class="functions light"><p>light</p></div>
+        <div class="functions brand"><img class="brand" src="brand.svg" alt="brand"></div>
+        <div class="functions start"><p>start</p></div>
+        <div class="functions reset"><p>reset</p></div>
+        <div class="functions tuguir"><p>tuguir</p></div>
+        <div class="functions mode"><p>mode</p></div>
+      </div>
+    </div>
+
+
+    <!-- clip path -->
+    <svg class="mask">
+      <clipPath id="svg-mask" clipPathUnits="objectBoundingBox">
+        <path  d="M0.498,0.05 C0.577,0.045,0.653,0.062,0.72,0.093 V0 H0.783 C0.784,0.008,0.785,0.016,0.788,0.025 C0.788,0.073,0.81,0.129,0.841,0.173 C0.932,0.254,0.992,0.367,1,0.487 C1,0.623,0.928,0.745,0.816,0.825 C0.795,0.871,0.782,0.924,0.782,0.971 C0.78,0.981,0.779,0.991,0.778,1 H0.72 V0.879 C0.653,0.908,0.578,0.924,0.498,0.924 C0.417,0.924,0.341,0.907,0.273,0.877 V1 H0.216 C0.215,0.991,0.214,0.981,0.212,0.971 C0.212,0.922,0.197,0.867,0.176,0.82 C0.068,0.74,0,0.62,0,0.487 C0,0.362,0.06,0.249,0.155,0.17 C0.185,0.126,0.206,0.072,0.206,0.025 C0.208,0.016,0.21,0.008,0.211,0 H0.273 V0.097 C0.341,0.066,0.417,0.05,0.498,0.05" fill="#C4C4C4" fill-opacity="1"/>
+      </clipPath>
+
+    <script src="script.js"></script>
+  </body>
+</html>
