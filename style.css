@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Share+Tech+Mono&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
 * {
   padding: 0;
@@ -22,28 +22,15 @@ body {
   align-items: center;
   width: 322px;
   height: 366px;
-  background:
-  radial-gradient(
-    circle at 7% 10%,
-    rgba(45, 40, 35, .6), 
-    transparent 60px),
-
+  background: radial-gradient(
+      circle at 7% 10%,
+      rgba(45, 40, 35, 0.4),
+      transparent 60px
+    ),
+    radial-gradient(circle at 90% 10%, rgba(45, 45, 50, 0.4), transparent 60px),
+    radial-gradient(circle at 10% 85%, rgba(35, 35, 40, 0.4), transparent 60px),
+    radial-gradient(circle at 90% 85%, rgba(45, 40, 35, 0.4), transparent 60px),
     radial-gradient(
-    circle at 90% 10%,
-    rgba(45, 45, 50, .6), 
-    transparent 60px),
-
-    radial-gradient(
-    circle at 10% 85%,
-    rgba(35, 35, 40, .4), 
-    transparent 60px),
-
-    radial-gradient(
-    circle at 90% 85%,
-    rgba(45, 40, 35, .6), 
-    transparent 60px),
-  
-     radial-gradient(
       circle at 50% 5%,
       rgba(178, 178, 183, 0.7),
       transparent 80px
@@ -60,22 +47,15 @@ body {
       )
       #e4e3e3;
   clip-path: url(#svg-mask);
-  
-  
 }
 .wrap {
-  filter: drop-shadow(-1px 6px 4px rgba(50, 50, 70, 0.5))
-  contrast(110%)
-  hue-rotate(40deg);
-  
-   
+  filter: drop-shadow(-1px 6px 4px rgba(50, 50, 70, 0.5)) contrast(110%)
+    hue-rotate(40deg);
 }
 .mask {
   position: absolute;
   width: 0px;
   height: 0px;
- 
-  
 }
 .first-border {
   position: relative;
@@ -86,37 +66,27 @@ body {
   height: 274px;
   border: 1px solid #aaa;
   background: radial-gradient(
-    circle at top left,
-    rgba(255, 255, 255, 0.5), 
-    transparent 100px
-  ),
-  radial-gradient(
-    circle at top right,
-    rgba(205, 205, 215, 0.5), 
-    transparent 100px
-  ),
-  radial-gradient(
-    at 50% 150%,
-    rgba(245, 245, 255, 0.5), 
-    transparent 100px
-  ),
-  radial-gradient(
-    circle at bottom right,
-    rgba(225, 220, 235, 0.5), 
-    transparent 400px
-  );
+      circle at top left,
+      rgba(255, 255, 255, 0.5),
+      transparent 100px
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(205, 205, 215, 0.5),
+      transparent 100px
+    ),
+    radial-gradient(at 50% 150%, rgba(245, 245, 255, 0.5), transparent 100px),
+    radial-gradient(
+      circle at bottom right,
+      rgba(225, 220, 235, 0.5),
+      transparent 400px
+    );
   border-radius: 50%;
 
-  box-shadow:
-   0 0 3px #cfcdcd,
-    2px 0 4px #9c9c9c, 
-    0px 0 1px 1px rgb(15, 15, 15),
-
-    inset 0px -2px 4px 1px #9c9c9c,
-    inset 0px -2px 1px 3px #cfcdcd,
+  box-shadow: 0 0 3px #cfcdcd, 2px 0 4px #9c9c9c, 0px 0 1px 1px rgb(15, 15, 15),
+    inset 0px -2px 4px 1px #9c9c9c, inset 0px -2px 1px 3px #cfcdcd,
     inset 0px 0px 4px rgb(15, 15, 15);
   transform: translateY(-5px);
-  
 }
 .visor {
   position: relative;
@@ -129,13 +99,9 @@ body {
   border: 1px solid #f3f3f7;
   background: linear-gradient(175deg, #848080, #161616);
 
-  box-shadow: 0 0 3px 1px #dededf, 
-              2px -2px 2px 1px #161620,
-
-              inset 0px -2px 1px 1px #4a4a4c,
-              inset 0px 2px 1px 1px #212126;
+  box-shadow: 0 0 3px 1px #dededf, 2px -2px 2px 1px #161620,
+    inset 0px -2px 1px 1px #4a4a4c, inset 0px 2px 1px 1px #212126;
   overflow: hidden;
-  
 }
 
 .bar {
@@ -143,55 +109,60 @@ body {
   height: 2px;
   width: 210px;
   transform: translateY(70px);
-  background: linear-gradient(90deg, #848086 1%, #9e9e9e, #d4d4d4
-  15%, #d4d4f4
-  90%, #848080 100%); 
+  background: linear-gradient(
+    90deg,
+    #848086 1%,
+    #9e9e9e,
+    #d4d4d4 15%,
+    #d4d4f4 90%,
+    #848080 100%
+  );
   top: 10px;
-
 }
 .week {
   margin-top: 8px;
   font-size: 1.2rem;
-  color: rgba(240,240, 250, .2);
+  color: rgba(240, 240, 250, 0.2);
 }
-.date {
+.month-day {
   display: flex;
   align-items: center;
-  color: rgba(250,250, 255, .2);
+  color: rgba(250, 250, 255, 0.2);
   letter-spacing: 3px;
 }
-.date::before{
-  content: "MONTH ";
-  font-size: .4rem;
-  transform: translateX(-5px);
+.month-day::before {
+  content: "MONTH";
+  font-size: 0.4rem;
+  transform: translateX(-15px);
 }
-.date::after{
+.month-day::after {
   content: " DATE";
-  font-size: .4rem;
-  transform: translateX(5px);
+  font-size: 0.4rem;
+  transform: translateX(15px);
 }
 .hour {
-  margin-top: 5px;
-  font-size: 4rem;
+  margin-top: 7px;
+  font-size: 3.1rem;
   letter-spacing: 3px;
-  color: rgba(240,240, 250, .2);
+  color: rgba(240, 240, 250, 0.2);
   margin-bottom: 0;
   text-align: center;
 }
 .seconds {
-  font-size: 2.5rem;
+  text-align: right;
+  font-size: 2.4rem;
   letter-spacing: 3px;
-  color: rgba(240,240, 250, .2);
-  margin-top: -12px;
+  color: rgba(240, 240, 250, 0.2);
+  margin-top: -5px;
   text-align: center;
 }
 .functions {
   position: absolute;
 }
-.functions p{
-  font-family: 'Roboto', sans-serif;
+.functions p {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   font-weight: 400;
   color: #161616;
@@ -201,7 +172,7 @@ body {
   top: 70px;
   transform: rotate(-60deg);
 }
-.brand { 
+.brand {
   top: 5px;
 }
 .start {
@@ -215,7 +186,7 @@ body {
   transform: rotate(125deg);
 }
 .tuguir {
-  bottom: 15px;  
+  bottom: 15px;
 }
 .mode {
   left: 25px;
