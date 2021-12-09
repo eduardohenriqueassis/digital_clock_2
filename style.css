@@ -22,10 +22,31 @@ body {
   align-items: center;
   width: 322px;
   height: 366px;
-  background: radial-gradient(
-      circle at 50% 0,
+  background:
+  radial-gradient(
+    circle at 7% 10%,
+    rgba(45, 40, 35, .6), 
+    transparent 60px),
+
+    radial-gradient(
+    circle at 90% 10%,
+    rgba(45, 45, 50, .6), 
+    transparent 60px),
+
+    radial-gradient(
+    circle at 10% 85%,
+    rgba(35, 35, 40, .4), 
+    transparent 60px),
+
+    radial-gradient(
+    circle at 90% 85%,
+    rgba(45, 40, 35, .6), 
+    transparent 60px),
+  
+     radial-gradient(
+      circle at 50% 5%,
       rgba(178, 178, 183, 0.7),
-      rgba(255, 0, 0, 0) 70.71%
+      transparent 80px
     ),
     radial-gradient(
       circle at 6.7% 75%,
@@ -40,15 +61,20 @@ body {
       #e4e3e3;
   clip-path: url(#svg-mask);
   
+  
 }
 .wrap {
-  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 70, 0.5));
+  filter: drop-shadow(-1px 6px 4px rgba(50, 50, 70, 0.5))
+  contrast(110%)
+  hue-rotate(40deg);
+  
    
 }
 .mask {
   position: absolute;
   width: 0px;
   height: 0px;
+ 
   
 }
 .first-border {
@@ -75,7 +101,7 @@ body {
     transparent 100px
   ),
   radial-gradient(
-    at bottom right,
+    circle at bottom right,
     rgba(225, 220, 235, 0.5), 
     transparent 400px
   );
@@ -90,6 +116,7 @@ body {
     inset 0px -2px 1px 3px #cfcdcd,
     inset 0px 0px 4px rgb(15, 15, 15);
   transform: translateY(-5px);
+  
 }
 .visor {
   position: relative;
@@ -108,6 +135,7 @@ body {
               inset 0px -2px 1px 1px #4a4a4c,
               inset 0px 2px 1px 1px #212126;
   overflow: hidden;
+  
 }
 
 .bar {
