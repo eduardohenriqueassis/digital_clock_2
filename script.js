@@ -46,7 +46,7 @@ function getMonth() {
   let m = date.getMonth();
   let d = date.getDate();
   let month = allMonth[m];
-  let monthDay = `${m}-${d}`;
+  let monthDay = `${month}-${d}`;
   document.getElementById("month-day").innerText = monthDay;
 }
 getDay();
