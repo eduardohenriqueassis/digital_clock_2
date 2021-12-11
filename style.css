@@ -15,6 +15,7 @@ body {
   height: 100vh;
   background: rgba(178, 178, 185, 0.3);
 }
+
 .clock {
   position: relative;
   margin: 0 auto;
@@ -202,12 +203,32 @@ body {
 .container-top-strap {
   position: absolute;
   width: 142px;
-  height: 85px;
+  height: 95px;
   /* background: black; */
-  top: -60px;
+  top: -70px;
   left: 89px;
   overflow: hidden;
   border-radius: 3px 3px 0px 0px;
+}
+.top-strap-bar {
+  position: absolute;
+  width: 144px;
+  height: 25px;
+  background: linear-gradient(
+    rgba(150, 150, 160, 1),
+    rgba(230, 230, 240, 1),
+    #cfcfcd,
+    #777 30%,
+    #555,
+    #777 30%,
+    rgba(230, 230, 240, 1),
+    #777
+  );
+  box-shadow: inset 1px -5px 2px rgba(150, 150, 160, 1);
+
+  bottom: 0;
+  z-index: 2;
+  /* display: none; */
 }
 
 /* Bottom Strap */
@@ -219,5 +240,28 @@ body {
   bottom: -89px;
   left: 89px;
   overflow: hidden;
-  border-radius: 3px 3px 0px 0px;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.bottom-strap-bar {
+  position: absolute;
+  width: 144px;
+  height: 25px;
+  background: linear-gradient(
+    #555 3%,
+    rgba(150, 150, 160, 1),
+    20%,
+    rgba(230, 230, 240, 1),
+    60%,
+    #555,
+    rgba(230, 230, 240, 1),
+    85%,
+    #777 92%
+  );
+  box-shadow: inset 1px 0px 2px rgba(150, 150, 160, 1),
+    inset -2px 0px 2px rgba(150, 150, 160, 1), 1px 3px 5px rgba(50, 50, 60, 1);
+
+  top: 0;
+  z-index: 2;
+  /* display: none; */
 }

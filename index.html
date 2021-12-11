@@ -16,13 +16,16 @@
     <div class="clock">
       <!-- Top Strap -->
       <div class="container-top-strap">
+        <div class="top-strap-bar"></div>
         <css-doodle grid="15x13">
           :doodle { width: 142px; height: 85px;}
-          background:radial-gradient(transparent 45%, rgba(15,15,15,.6)) 50%
-          calc(50% + 1em); border-radius: 10% 30% 10% 30%; transform:
-          skewY(-20deg); :container {background:radial-gradient(transparent 45%,
-          rgba(150,150,160,.6)) 50% calc(50% + 1em); } @even { box-shadow: -2px
-          -1px 2px 1px rgba(8,8,9,.8); transform: scale(0.7) }
+          background:radial-gradient(transparent 35%, #667, #cce) 50% calc(50% +
+          1em); border-radius: 10% 30% 10% 30%; transform: skewY(-30deg);
+          :container {background:radial-gradient(transparent 45%,
+          rgba(150,150,160,.6)) 50% calc(10% + 5em); } @even { box-shadow: -2px
+          -1px 2px 1px rgba(8,8,9,.8); transform: scale(0.7) } @row(2,3,4,5){
+          transform: scale(.9); } @row(1){ transform: scale(.7); } @row(13){
+          transform: scale(1.1); }
         </css-doodle>
       </div>
       <span class="wrap">
@@ -47,13 +50,16 @@
         </div>
       </span>
       <div class="container-bottom-strap">
+        <div class="bottom-strap-bar"></div>
         <css-doodle grid="15x13">
           :doodle { width: 142px; height: 115px;}
-          background:radial-gradient(transparent 45%, rgba(15,15,15,.6)) 50%
-          calc(50% + 1em); border-radius: 10% 30% 10% 30%; transform:
-          skewY(-20deg); :container {background:radial-gradient(transparent 45%,
-          rgba(150,150,160,.8)) 50% calc(50% + 1em); } @even { box-shadow: -2px
-          -1px 2px 1px rgba(8,8,9,.8); transform: scale(0.7) }
+          background:radial-gradient(transparent 35%, #667, #cce) 50% calc(50% +
+          1em); border-radius: 10% 30% 10% 30%; transform: skewY(-30deg);
+          :container {background:radial-gradient(transparent 45%,
+          rgba(150,150,160,.7)) 50% calc(50% + 1em); } @even { box-shadow: -2px
+          -1px 2px 1px rgba(8,8,9,.8); transform: scale(0.7) } @row(10,11,12){
+          transform: scale(.8); } @row(13){ transform: scale(.5); } @row(1, 2,
+          3, 4, 5, 6){ transform: scale(1.1); }
         </css-doodle>
       </div>
     </div>
