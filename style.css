@@ -212,7 +212,6 @@ body {
 
 /* Bottom Strap */
 .container-bottom-strap {
-  transform: rotate(180deg);
   position: absolute;
   width: 142px;
   height: 115px;
