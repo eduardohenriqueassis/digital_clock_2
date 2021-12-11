@@ -15,6 +15,10 @@ body {
   height: 100vh;
   background: rgba(178, 178, 185, 0.3);
 }
+.clock {
+  position: relative;
+  margin: 0 auto;
+}
 
 .clock-body {
   display: flex;
@@ -49,8 +53,8 @@ body {
   clip-path: url(#svg-mask);
 }
 .wrap {
-  filter: drop-shadow(-1px 6px 4px rgba(50, 50, 70, 0.5)) contrast(110%)
-    hue-rotate(40deg);
+  filter: drop-shadow(-1px 6px 4px rgba(50, 50, 70, 0.5)) contrast(110%);
+  /* hue-rotate(40deg); */
 }
 .mask {
   position: absolute;
@@ -192,4 +196,29 @@ body {
   left: 25px;
   bottom: 60px;
   transform: rotate(-125deg);
+}
+
+/* Top Strap */
+.container-top-strap {
+  position: absolute;
+  width: 142px;
+  height: 85px;
+  /* background: black; */
+  top: -60px;
+  left: 89px;
+  overflow: hidden;
+  border-radius: 3px 3px 0px 0px;
+}
+
+/* Bottom Strap */
+.container-bottom-strap {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 142px;
+  height: 115px;
+  /* background: black; */
+  bottom: -89px;
+  left: 89px;
+  overflow: hidden;
+  border-radius: 3px 3px 0px 0px;
 }
